@@ -1,7 +1,7 @@
 (a) Create EKS Cluster (without node group)
 
 eksctl create cluster \
-  --name=Cloudaseem \
+  --name=statbucks \
   --region=ap-south-1 \
   --zones=ap-south-1a,ap-south-1b \
   --version=1.30 \
@@ -14,13 +14,13 @@ eksctl create cluster \
 
 eksctl utils associate-iam-oidc-provider \
   --region ap-south-1 \
-  --cluster Cloudaseem \
+  --cluster statbuck \
   --approve
 
 c. node group
 
 eksctl create nodegroup \
-  --cluster=Cloudaseem \
+  --cluster=statbuck \
   --region=ap-south-1 \
   --name=node2 \
   --node-type=t3.medium \
