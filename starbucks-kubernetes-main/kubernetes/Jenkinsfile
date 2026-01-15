@@ -15,7 +15,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/Aseemakram19/hotstar-kubernetes.git'
+                git branch: 'main', url: 'https://github.com/sharatharul2/starbucks-kubernetes.git'
             }
         }
         stage("Sonarqube Analysis "){
@@ -83,9 +83,9 @@ pipeline{
                     <p>Started by: ${buildUser}</p>
                     <p>Build URL: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
                 """,
-                to: 'mohdaseemakram19@gmail.com',
-                from: 'mohdaseemakram19@gmail.com',
-                replyTo: 'mohdaseemakram19@gmail.com',
+                to: 'sharatharul10@gmail.com',
+                from: 'sharatharul10@gmail.com',
+                replyTo: 'sharatharul10@gmail.com',
                 mimeType: 'text/html',
                 attachmentsPattern: 'trivyfs.txt,trivyimage.txt'
             )
