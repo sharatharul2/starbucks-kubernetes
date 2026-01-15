@@ -1,0 +1,9 @@
+.doclist .onDropboxActionSendTo  .onActionSyncChanges a.action-link
+{
+    background-image: url("dropbox-16.png");
+}
+
+.toolbar .onDropboxActionSendTo .onActionSyncChanges
+{
+    background-image: url("dropbox-16.png");
+}
